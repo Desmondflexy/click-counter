@@ -4,7 +4,7 @@ function main() {
   const button = document.querySelector('#app>button');
   const textArea = document.querySelector("#textarea");
   const timerP = document.getElementById('timer');
-  const maxTime = 5;
+  const maxTime = 3;
   let intervalID, timer, clickCounter;
 
   initGame();
@@ -24,7 +24,7 @@ function main() {
         }, 2000);
         initGame();
       }
-    }, 400);
+    }, 1000);
     textArea.innerHTML = `Click ${++clickCounter}`;
   })
 
